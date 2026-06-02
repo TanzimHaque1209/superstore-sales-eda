@@ -1,44 +1,78 @@
-Superstore Sales EDA
-Exploratory data analysis of the Sample Superstore retail dataset using Python. The project cleans and explores 10,000+ orders to uncover patterns in sales, profit, regional performance, customer segments, and the impact of discounting — turning raw transaction data into actionable business insights.
 Dataset
-
-Source: Sample Superstore retail dataset
-Size: 10,194 rows × 21 columns
-Key fields: Order Date, Ship Mode, Segment, Region, Category, Sub-Category, Sales, Quantity, Discount, Profit
-Quality: No missing values and no duplicate rows were found during cleaning.
-
+Dataset: Sample Superstore Retail Dataset
+Rows: 10,194
+Columns: 21
+Key Features:
+Order Date
+Ship Mode
+Segment
+Region
+Category
+Sub-Category
+Sales
+Quantity
+Discount
+Profit
+Data Quality Findings:
+No missing values detected
+No duplicate records identified
 Tools & Libraries
-
 Python
-Pandas — data loading, cleaning, aggregation
-NumPy — numerical operations
-Matplotlib & Seaborn — data visualization
-
-Workflow
-
-Data loading & inspection — head(), info(), describe(), shape, and column review.
-Data quality checks — verified there were no null values or duplicate records.
-Feature engineering — converted Order Date to datetime and extracted year and month for time-based analysis.
-Aggregation & grouping — summarized sales and profit across categories, sub-categories, regions, segments, and months.
-Correlation analysis — examined relationships between Sales, Profit, Discount, and Quantity.
-Visualization — built charts to communicate the findings clearly.
-
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Jupyter Notebook
+Project Workflow
+1. Data Loading & Understanding
+Imported and explored the dataset using:
+head()
+info()
+describe()
+shape
+columns
+2. Data Cleaning
+Checked for missing values
+Verified duplicate records
+Confirmed data quality before analysis
+3. Feature Engineering
+Converted Order Date to datetime format
+Extracted:
+Year
+Month
+Enabled time-based trend analysis
+4. Exploratory Data Analysis
+Analyzed sales performance across categories
+Evaluated profit performance across regions
+Examined customer segments
+Investigated sub-category performance
+Identified loss-making transactions
+Studied relationships between discounting and profitability
+5. Correlation Analysis
+Explored relationships among:
+Sales
+Profit
+Discount
+Quantity
+6. Data Visualization
+Created visualizations to communicate business insights effectively
 Key Insights
+Technology generated the highest total sales and profit among all categories.
+The West region achieved the highest overall sales and profitability.
+Chairs and Phones were among the highest-performing sub-categories by sales.
+Sales reached their peak during November, while profit peaked in December.
+The Consumer segment contributed the largest share of total sales.
+Higher discount levels were associated with lower profitability.
+Several products generated negative profit despite strong sales performance, highlighting potential inefficiencies in discounting strategies.
+Visualizations Included
+Sales by Category (Bar Chart)
+Profit by Category (Bar Chart)
+Profit by Region (Bar Chart)
+Sales by Customer Segment (Bar Chart)
+Monthly Sales Trend (Line Chart)
+Sales by Sub-Category (Horizontal Bar Chart)
+Discount vs Profit (Scatter Plot)
+Correlation Heatmap
+Conclusion
 
-Technology is the strongest category, leading in both total sales and profit.
-The West region generates the highest sales and the highest profit.
-Chairs and Phones are among the top-performing sub-categories by sales.
-Sales peak in November, while profit peaks in December, pointing to seasonal demand.
-The Consumer segment contributes the most sales.
-Higher discounts are associated with lower profit — and several products are sold at a loss, highlighting clear opportunities to review the discounting strategy.
-
-Visualizations
-
-Sales by Category (bar)
-Profit by Category (bar)
-Profit by Region (bar)
-Sales by Customer Segment (bar)
-Monthly Sales Trend (line)
-Sales by Sub-Category (horizontal bar)
-Discount vs Profit (scatter)
-Correlation Heatmap (Sales, Profit, Discount, Quantity)
+This project demonstrates how exploratory data analysis can transform raw retail transaction data into actionable business insights. By combining data cleaning, statistical exploration, and visualization techniques, key patterns in sales, profitability, customer behavior, and discounting strategies were identified to support data-driven decision-making.
